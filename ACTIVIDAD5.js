@@ -1,5 +1,5 @@
 //ACTIVIDAD 5
-
+//NOMBRE: NANCY MAYEK TORRES AGUILAR
 //1. Crear una variable de cada tipo y hacerle un console.log a cada una en la terminal.
 
 var cadena= "HOLA EMTECH";
