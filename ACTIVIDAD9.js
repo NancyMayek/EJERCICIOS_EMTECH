@@ -58,6 +58,31 @@ const btn_ocultar = () => {
 
 
 //5.Local Storage
+function loadStorage(){
+    console.log("hey");
+    let nombre = document.getElementById('localStorage'); 
+    if (localStorage.getItem("nombre") === null) {
+    nombre.innerHTML = 
+        `
+            <h1>Hola me podrias dar tu nombre?</h1>
+            <input id="valor_nombre" type="text">
+            <button id="btReiniciar" onclick="btn_guardar();">Guardar</button>
+            <button id="btReiniciar" onclick="btn_reiniciar();">Reiniciar</button>
+        `;
+    }else{
+
+        let Stringlocal = JSON.stringify(localStorage);
+        let objectLocal = JSON.parse(Stringlocal);
+        let nombre = document.getElementById('localStorage'); 
+        
+        Object.entries(objectLocal).forEach(([key,value])=>{
+            nombre.innerHTML = `<h1> Bienvenido nuevamente ${value} </h1>
+                                <button id="btReiniciar" onclick="btn_reiniciar();">Reiniciar</button>`;
+        });
+    }
+
+}
+
 const btn_guardar = () => {
     let nom = document.getElementById('valor_nombre');
     if(nom.value == null || nom.value == '' ){
