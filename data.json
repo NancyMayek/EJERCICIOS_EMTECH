@@ -1,0 +1,7 @@
+[
+    {"nombre": "Camiseta", "precio": 250, "marca": "Adidas" },
+    {"nombre": "Gorra", "precio": 25, "marca": "COOLGORRAS" },
+    {"nombre": "Tasas", "precio": 45, "marca": "Sublimake" },
+    {"nombre": "Rompecabezas", "precio": 250, "marca": "PLAYMATE" }
+
+]
